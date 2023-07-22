@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.portada {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+
+.flower img {
+  height: 200px;
+}
+
+.upside {
+  transform: scale(-1, -1);
+}
+
+.title-bottom {
+  margin-top: 72px;
+}
+
+.title {
+  color: #3c3c3b;
+  font-family: "Cardo", serif;
+  font-size: 24px;
+}
+
+.tit-date {
+  font-style: italic;
+  letter-spacing: 0.4rem;
+}
+
+.tit-text {
+  letter-spacing: 0.4rem;
+}
+
+.tit-names {
+  color: #afaf8b;
+  font-family: "Ms Madi", cursive;
+  font-size: 60px;
+  margin: 0;
+  font-weight: 300;
+}
+.location {
+  background-color: #fafafa;
+}
+
+.location img {
+  width: 100px;
+}
+
+.cursive {
+  font-family: "Ms Madi", cursive;
+  font-weight: 300;
+}
+
+.divider {
+  background-color: #afaf8b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cardo", serif;
+  font-size: 24px;
+  padding: 24px;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 16px;
+  }
+  .tit-names {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 700px) {
+  .title {
+    font-size: 48px;
+  }
+  .tit-names {
+    font-size: 108px;
+  }
+  .flower img {
+    width: 100%;
+    height: auto;
+  }
+  .divider {
+    font-size: 48px;
+  }
+}
