@@ -2,19 +2,29 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Cardo", serif;
+  letter-spacing: 0.1rem;
+  background-color: #fafafa;
 }
 .portada {
-  background-color: #fafafa;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-size: cover;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .flower img {
   height: 200px;
 }
 
+.green {
+  color: #afaf8b;
+}
+.italic {
+  font-style: italic;
+}
 .upside {
   transform: scale(-1, -1);
 }
@@ -46,7 +56,8 @@ body {
   font-weight: 300;
 }
 .location {
-  background-color: #fafafa;
+  padding: 24px;
+  font-size: 24px;
 }
 
 .location img {
@@ -56,6 +67,7 @@ body {
 .cursive {
   font-family: "Ms Madi", cursive;
   font-weight: 300;
+  font-size: 48px;
 }
 
 .divider {
@@ -69,7 +81,70 @@ body {
   padding: 24px;
   text-align: center;
   font-style: italic;
-  letter-spacing: 0.1rem;
+  flex-direction: column;
+}
+
+.bancarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cardo", serif;
+  font-size: 24px;
+  padding: 48px 24px;
+  text-align: center;
+  font-style: italic;
+  flex-direction: column;
+  position: relative;
+}
+
+.bancarios img {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  height: 200px;
+}
+
+.seccion-contador {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-contador .flower img {
+  height: 150px;
+}
+
+#contador {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  padding: 24px;
+}
+#contador p {
+  padding: 24px;
+  flex-basis: 10%;
+}
+
+.btn {
+  display: inline;
+  border-radius: 48px;
+  font-size: 12px;
+  color: #3c3c3b;
+  background-color: #fafafa;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px 48px;
+  font-style: normal;
+}
+
+.green-btn {
+  color: #fafafa;
+  background-color: #afaf8b;
 }
 
 @media (max-width: 400px) {
@@ -82,17 +157,46 @@ body {
 }
 
 @media (min-width: 700px) {
+  .portada {
+    height: auto;
+  }
   .title {
     font-size: 48px;
   }
   .tit-names {
     font-size: 108px;
   }
-  .flower img {
+  .flower img,
+  .seccion-contador .flower img {
     width: 100%;
     height: auto;
   }
-  .divider {
+  .divider,
+  .bancarios {
     font-size: 48px;
+  }
+
+  .bancarios p {
+    width: 60%;
+  }
+
+  .bancarios img {
+    left: -35px;
+    height: 300px;
+  }
+
+  .location {
+    font-size: 40px;
+  }
+  .cursive {
+    font-size: 60px;
+  }
+  #contador {
+    font-size: 48px;
+  }
+  .btn {
+    border-radius: 48px;
+    font-size: 24px;
+    padding: 12px 48px;
   }
 }
