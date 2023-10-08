@@ -1,10 +1,47 @@
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cormorant Bold";
+  src: url("../fonts/Cormorant-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cormorant Italic";
+  src: url("../fonts/Cormorant-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cormorant BItalic";
+  src: url("../fonts/Cormorant-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cormorant MItalic";
+  src: url("../fonts/Cormorant-MediumItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Southland";
+  src: url("../fonts/Southland.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Cardo", serif;
+  font-family: "Cormorant", serif;
   letter-spacing: 0.1rem;
-  background-color: #fafafa;
+  color: #3c3c3b;
 }
 .portada {
   display: flex;
@@ -13,107 +50,214 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   overflow: hidden;
+  background: url(./../img/background.png) repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.flower {
+  height: 250px;
 }
 
 .flower img {
-  height: 200px;
+  height: 100%;
 }
 
 .green {
   color: #afaf8b;
 }
-.italic {
-  font-style: italic;
+
+.title-top,
+.title-bottom {
+  padding: 0 70px;
 }
-.upside {
-  transform: scale(-1, -1);
+
+.title-top {
+  margin-top: 48px;
 }
 
 .title-bottom {
-  margin-top: 72px;
-}
-
-.title {
-  color: #3c3c3b;
-  font-family: "Cardo", serif;
-  font-size: 24px;
-}
-
-.tit-date {
-  font-style: italic;
-  letter-spacing: 0.4rem;
+  margin-bottom: 60px;
 }
 
 .tit-text {
+  color: #3c3c3b;
+  font-family: "Cormorant Bold", serif;
+  font-size: 32px;
+  letter-spacing: 0.4rem;
+}
+
+.tit-date {
+  font-size: 32px;
+  font-family: "Cormorant MItalic";
   letter-spacing: 0.4rem;
 }
 
 .tit-names {
   color: #afaf8b;
-  font-family: "Ms Madi", cursive;
-  font-size: 60px;
+  font-family: "Southland", cursive;
+  font-size: 7.4em;
+  line-height: 1.4em;
   margin: 0;
-  font-weight: 300;
 }
 .location {
-  padding: 24px;
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 32px 30px;
+  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  line-height: 12px;
 }
 
-.location img {
+.pictures {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 60px;
+  position: relative;
+}
+
+.pictures .frame {
+  width: 100%;
+  padding: 0 35px 60px;
+}
+
+.lateral-flower {
+  position: absolute;
+  top: 0px;
+  right: -1rem;
+}
+
+.lateral-flower img {
+  width: 60vw;
+  height: auto;
+}
+
+.rings img {
   width: 100px;
 }
 
+.aap {
+  font-family: "Cormorant Bold";
+  font-size: 18px;
+}
 .cursive {
-  font-family: "Ms Madi", cursive;
-  font-weight: 300;
+  font-family: "Southland", cursive;
   font-size: 48px;
+  margin: 24px 0px 16px;
 }
 
 .divider {
+  font-family: "Cormorant Italic", cursive;
   background-color: #afaf8b;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Cardo", serif;
-  font-size: 24px;
-  padding: 24px;
+  font-size: 30px;
+  padding: 0px 48px;
   text-align: center;
-  font-style: italic;
   flex-direction: column;
+  min-height: 200px;
+}
+
+.divider.bold {
+  font-family: "Cormorant Bold";
+}
+.divider .elegante {
+  font-family: "Southland", cursive;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+.direccion {
+  font-family: "Cormorant Italic", cursive;
+  font-size: 24px;
+  letter-spacing: 0;
+}
+
+.horario {
+  font-family: "Cormorant BItalic", cursive;
+  margin: 16px 0px 24px;
+  font-size: 24px;
 }
 
 .bancarios {
+  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Cardo", serif;
   font-size: 24px;
-  padding: 48px 24px;
+  padding: 48px 48px 120px;
   text-align: center;
-  font-style: italic;
   flex-direction: column;
   position: relative;
 }
 
+.asistencia {
+  font-family: "Cormorant Italic", cursive;
+  padding: 48px 0 32px;
+}
+.asistencia .bold,
+.final {
+  font-family: "Cormorant BItalic", cursive;
+}
+
+.white-boton {
+  margin: 20px 0 40px;
+}
+
+.bancarios span {
+  font-family: "Cormorant Italic", cursive;
+  margin-bottom: 40px;
+}
+
 .bancarios img {
   position: absolute;
-  top: 0;
-  left: -35px;
-  height: 200px;
+  bottom: -25px;
+  width: 400px;
+  left: -125px;
 }
 
 .seccion-contador {
+  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow: hidden;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family: "Cormorant Italic", cursive;
 }
 
-.seccion-contador .flower img {
-  height: 150px;
+#horas,
+#dias,
+#minutos,
+#segundos {
+  font-family: "Cormorant BItalic", cursive;
+}
+
+.seccion-contador .flower {
+  width: 90%;
+  height: auto;
 }
 
 #contador {
@@ -121,52 +265,94 @@ body {
   justify-content: center;
   align-items: baseline;
   font-size: 20px;
-  font-weight: 500;
-  font-style: italic;
-  padding: 24px;
+  padding: 24px 24px 0;
 }
 #contador p {
   padding: 24px;
   flex-basis: 10%;
 }
 
-.btn {
+.boton {
   display: inline;
   border-radius: 48px;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 0;
   color: #3c3c3b;
   background-color: #fafafa;
-  font-weight: 500;
   text-decoration: none;
-  padding: 12px 48px;
-  font-style: normal;
+  padding: 18px 32px;
+  font-family: "Cormorant Bold";
+  border: none;
 }
 
-.green-btn {
+.green-boton {
   color: #fafafa;
   background-color: #afaf8b;
 }
 
-@media (max-width: 400px) {
-  .title {
-    font-size: 16px;
+.modal-content {
+  color: #3c3c3b;
+  font-size: 32px;
+}
+
+@media (max-width: 600px) {
+  .flower {
+    height: 185px;
+  }
+
+  .title-top,
+  .title-bottom {
+    padding: 0 40px;
+  }
+  .portada-title {
+    font-size: 20px;
   }
   .tit-names {
-    font-size: 48px;
+    font-size: 5em;
+  }
+
+  .divider {
+    font-size: 24px;
+  }
+
+  .modal-content {
+    color: #3c3c3b;
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .flower {
+    height: 175px;
+  }
+
+  .title-top,
+  .title-bottom {
+    padding: 0 40px;
+  }
+  .portada-title {
+    font-size: 20px;
+  }
+  .tit-names {
+    font-size: 4em;
+  }
+  .bancarios img {
+    left: -150px;
   }
 }
 
-@media (min-width: 700px) {
-  .portada {
-    height: auto;
+@media (min-width: 1024px) {
+  .flower {
+    height: 250px;
   }
-  .title {
-    font-size: 48px;
+
+  .portada-title {
+    font-size: 40px;
   }
+
   .tit-names {
-    font-size: 108px;
+    font-size: 9em;
   }
-  .flower img,
+
   .seccion-contador .flower img {
     width: 100%;
     height: auto;
@@ -180,11 +366,6 @@ body {
     width: 60%;
   }
 
-  .bancarios img {
-    left: -35px;
-    height: 300px;
-  }
-
   .location {
     font-size: 40px;
   }
@@ -194,9 +375,67 @@ body {
   #contador {
     font-size: 48px;
   }
-  .btn {
-    border-radius: 48px;
-    font-size: 24px;
-    padding: 12px 48px;
+
+  .pictures {
+    padding: 80px 60px;
+  }
+
+  .lateral-flower img {
+    width: 40vw;
+    height: auto;
+  }
+
+  .aap {
+    font-size: 1.5em;
+    line-height: 0.5em;
+  }
+  .cursive {
+    font-size: 4em;
+    line-height: 1em;
+  }
+  .direccion {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+
+  .horario {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 32px 0px 48px;
+  }
+
+  .boton {
+    font-size: 32px;
+  }
+
+  .divider .elegante {
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+  .divider {
+    min-height: 300px;
+  }
+  .bancarios img {
+    width: 800px;
+  }
+  .bancarios {
+    min-height: 600px;
+    font-size: 48px;
+  }
+
+  .white-boton {
+    margin: 40px 0 80px;
+  }
+
+  .rings img {
+    width: 250px;
+  }
+  .seccion-contador .flower {
+    width: 90%;
+    height: auto;
+  }
+
+  #contador {
+    font-size: 48px;
   }
 }
