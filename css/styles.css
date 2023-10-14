@@ -126,6 +126,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-bottom: 20px;
 }
 
 .pictures .frame {
@@ -277,6 +278,9 @@ body {
 .green-boton {
   color: #fafafa;
   background-color: #afaf8b;
+}
+
+.bancarios .green-boton {
   margin-bottom: 32px;
 }
 
