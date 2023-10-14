@@ -48,13 +48,19 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   background: url(./../img/background.png) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .portada {
+    height: 90vh;
+  }
 }
 
 .flower {
@@ -65,21 +71,9 @@ body {
   height: 100%;
 }
 
-.green {
-  color: #afaf8b;
-}
-
-.title-top,
-.title-bottom {
-  padding: 0 70px;
-}
-
 .title-top {
-  margin-top: 48px;
-}
-
-.title-bottom {
-  margin-bottom: 60px;
+  padding: 0 70px;
+  margin-bottom: 40px;
 }
 
 .tit-text {
@@ -89,73 +83,68 @@ body {
   letter-spacing: 0.4rem;
 }
 
+.letter-img {
+  margin-top: 20px;
+}
+.letter-img img {
+  width: 100%;
+}
+.letter-img.date img {
+  width: 85%;
+}
+.letter-img.elegante {
+  margin-top: 0;
+}
+.letter-img.elegante img {
+  width: 40%;
+}
+
 .tit-date {
   font-size: 32px;
   font-family: "Cormorant MItalic";
   letter-spacing: 0.4rem;
 }
 
-.tit-names {
-  color: #afaf8b;
-  font-family: "Southland", cursive;
-  font-size: 7.4em;
-  line-height: 1.4em;
-  margin: 0;
-}
 .location {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 60px 32px 30px;
-  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  padding: 20px 24px;
+  background: url(./../img/background-2.png) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  line-height: 12px;
 }
 
 .pictures {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  background: url(./../img/background-2.png) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 60px;
-  position: relative;
 }
 
 .pictures .frame {
   width: 100%;
-  padding: 0 35px 60px;
-}
-
-.lateral-flower {
-  position: absolute;
-  top: 0px;
-  right: -1rem;
-}
-
-.lateral-flower img {
-  width: 60vw;
-  height: auto;
 }
 
 .rings img {
-  width: 100px;
+  width: 90px;
+}
+
+.rings {
+  margin-top: 20px;
 }
 
 .aap {
   font-family: "Cormorant Bold";
-  font-size: 18px;
-}
-.cursive {
-  font-family: "Southland", cursive;
-  font-size: 48px;
-  margin: 24px 0px 16px;
+  font-size: 20px;
+  margin-top: 14px;
+  letter-spacing: 0;
 }
 
 .divider {
@@ -166,19 +155,15 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  padding: 0px 48px;
+  padding: 24px;
   text-align: center;
   flex-direction: column;
-  min-height: 200px;
+  min-height: 150px;
+  line-height: 1.3;
 }
 
 .divider.bold {
   font-family: "Cormorant Bold";
-}
-.divider .elegante {
-  font-family: "Southland", cursive;
-  font-size: 2.5em;
-  line-height: 1em;
 }
 
 .direccion {
@@ -189,12 +174,11 @@ body {
 
 .horario {
   font-family: "Cormorant BItalic", cursive;
-  margin: 16px 0px 24px;
   font-size: 24px;
 }
 
 .bancarios {
-  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  background: url(./../img/background-2.png) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -203,39 +187,42 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  padding: 48px 48px 120px;
+  padding: 40px 24px 100px;
   text-align: center;
   flex-direction: column;
   position: relative;
+  letter-spacing: 0;
+  line-height: 1.3;
 }
 
 .asistencia {
   font-family: "Cormorant Italic", cursive;
-  padding: 48px 0 32px;
+  line-height: 1.3;
+  letter-spacing: 0;
 }
 .asistencia .bold,
 .final {
   font-family: "Cormorant BItalic", cursive;
+  letter-spacing: 0;
 }
 
 .white-boton {
-  margin: 20px 0 40px;
+  margin-bottom: 20px;
 }
 
 .bancarios span {
   font-family: "Cormorant Italic", cursive;
-  margin-bottom: 40px;
 }
 
 .bancarios img {
   position: absolute;
-  bottom: -25px;
-  width: 400px;
-  left: -125px;
+  bottom: 25px;
+  width: 55%;
+  left: -25px;
 }
 
 .seccion-contador {
-  background: url(./../img/SVG/background-2.svg) repeat center center fixed;
+  background: url(./../img/background-2.png) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -256,7 +243,7 @@ body {
 }
 
 .seccion-contador .flower {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -264,30 +251,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  font-size: 20px;
-  padding: 24px 24px 0;
+  font-size: 24px;
+  padding: 60px 40px 20px;
 }
 #contador p {
-  padding: 24px;
+  padding: 14px;
   flex-basis: 10%;
 }
 
 .boton {
   display: inline;
   border-radius: 48px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 0;
   color: #3c3c3b;
   background-color: #fafafa;
   text-decoration: none;
-  padding: 18px 32px;
+  padding: 18px 0px;
   font-family: "Cormorant Bold";
   border: none;
+  width: 75%;
+  margin-top: 20px;
 }
 
 .green-boton {
   color: #fafafa;
   background-color: #afaf8b;
+  margin-bottom: 32px;
 }
 
 .modal-content {
@@ -300,15 +290,11 @@ body {
     height: 185px;
   }
 
-  .title-top,
-  .title-bottom {
+  .title-top {
     padding: 0 40px;
   }
   .portada-title {
     font-size: 20px;
-  }
-  .tit-names {
-    font-size: 5em;
   }
 
   .divider {
@@ -325,18 +311,11 @@ body {
     height: 175px;
   }
 
-  .title-top,
-  .title-bottom {
+  .title-top {
     padding: 0 40px;
   }
   .portada-title {
     font-size: 20px;
-  }
-  .tit-names {
-    font-size: 4em;
-  }
-  .bancarios img {
-    left: -150px;
   }
 }
 
@@ -349,53 +328,33 @@ body {
     font-size: 40px;
   }
 
-  .tit-names {
-    font-size: 9em;
+  .letter-img img,
+  .letter-img.date img {
+    width: 50%;
   }
 
   .seccion-contador .flower img {
     width: 100%;
     height: auto;
   }
-  .divider,
-  .bancarios {
+  .divider {
     font-size: 48px;
-  }
-
-  .bancarios p {
-    width: 60%;
   }
 
   .location {
     font-size: 40px;
   }
-  .cursive {
-    font-size: 60px;
-  }
+
   #contador {
-    font-size: 48px;
-  }
-
-  .pictures {
-    padding: 80px 60px;
-  }
-
-  .lateral-flower img {
-    width: 40vw;
-    height: auto;
+    font-size: 56px;
+    padding: 120px 40px 80px;
   }
 
   .aap {
     font-size: 1.5em;
-    line-height: 0.5em;
-  }
-  .cursive {
-    font-size: 4em;
-    line-height: 1em;
   }
   .direccion {
     font-size: 1.5em;
-    line-height: 1em;
   }
 
   .horario {
@@ -406,36 +365,20 @@ body {
 
   .boton {
     font-size: 32px;
+    width: 30%;
+    padding: 24px 0;
   }
 
-  .divider .elegante {
-    font-size: 2.5em;
-    line-height: 1em;
-  }
-  .divider {
-    min-height: 300px;
-  }
-  .bancarios img {
-    width: 800px;
-  }
   .bancarios {
     min-height: 600px;
     font-size: 48px;
   }
-
-  .white-boton {
-    margin: 40px 0 80px;
+  .bancarios img {
+    width: 35%;
+    left: -85px;
   }
 
   .rings img {
-    width: 250px;
-  }
-  .seccion-contador .flower {
-    width: 90%;
-    height: auto;
-  }
-
-  #contador {
-    font-size: 48px;
+    width: 200px;
   }
 }
