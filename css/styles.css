@@ -69,11 +69,7 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: red;
-  background: url(./../img/background-3.png) no-repeat right top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(./../img/background-3.png) no-repeat center center;
   border-bottom: solid #afaf8b 0.1px;
 }
 
@@ -125,28 +121,25 @@ body {
   letter-spacing: 0.4rem;
 }
 
+.middle {
+  background: url(./../img/background-3.png) no-repeat center center;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
 .location {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 32px 24px;
-  background: url(./../img/background-3.png) no-repeat right top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .pictures {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(./../img/background-3.png) no-repeat right top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-bottom: 24px; 
+  padding-bottom: 24px;
 }
 
 .pictures .frame {
@@ -201,7 +194,7 @@ body {
 }
 
 .bancarios {
-  background: url(./../img/background-3.png) no-repeat right top fixed;
+  background: url(./../img/background-3.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -229,7 +222,7 @@ body {
   letter-spacing: 0;
 }
 
-.divider.final{
+.divider.final {
   padding: 36px 24px;
 }
 
@@ -253,7 +246,7 @@ body {
 }
 
 .seccion-contador {
-  background: url(./../img/background-3.png) no-repeat right top fixed;
+  background: url(./../img/background-3.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -353,7 +346,99 @@ body {
   }
 }
 
+@media (min-width: 700px) {
+  .middle,
+  .portada {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+  }
+
+  .flower {
+    height: 150px;
+  }
+
+  .portada-title {
+    font-size: 32px;
+  }
+
+  .letter-img img,
+  .letter-img.date img {
+    width: 60%;
+  }
+
+  .letter-img.elegante img {
+    width: 30%;
+  }
+
+  .seccion-contador .flower {
+    height: 150px;
+  }
+
+  .divider,
+  .divider.bold {
+    padding: 48px;
+    font-size: 32px;
+  }
+
+  .location {
+    font-size: 40px;
+    padding: 48px;
+  }
+
+  #contador {
+    font-size: 40px;
+    padding: 60px 20px 40px;
+  }
+
+  .aap {
+    font-size: 32px;
+  }
+  .direccion {
+    font-size: 32px;
+  }
+
+  .horario {
+    font-size: 32px;
+    line-height: 1em;
+    margin: 32px 0px 48px;
+  }
+
+  .number {
+    font-family: "Minion Variable";
+    font-size: 1em;
+  }
+
+  .boton {
+    font-size: 20px;
+    width: 50%;
+    padding: 24px 0;
+  }
+
+  .bancarios {
+    min-height: 300px;
+    font-size: 32px;
+  }
+  .bancarios img {
+    width: 40%;
+    left: -35px;
+  }
+
+  .rings img {
+    width: 100px;
+  }
+}
 @media (min-width: 1024px) {
+  .middle,
+  .portada {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   .flower {
     height: 250px;
   }
@@ -363,7 +448,8 @@ body {
   }
 
   .letter-img img,
-  .letter-img.date img, .letter-img.elegante img {
+  .letter-img.date img,
+  .letter-img.elegante img {
     width: 50%;
   }
 
@@ -371,11 +457,12 @@ body {
     height: 250px;
   }
 
-  .divider, .divider.bold  {
+  .divider,
+  .divider.bold {
     padding: 48px;
     font-size: 48px;
   }
- 
+
   .location {
     font-size: 40px;
     padding: 48px;
@@ -406,7 +493,7 @@ body {
 
   .boton {
     font-size: 32px;
-    width: 30%;
+    width: 40%;
     padding: 24px 0;
   }
 
