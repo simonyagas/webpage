@@ -41,7 +41,13 @@
   font-weight: normal;
 }
 @font-face {
-  font-family: "Minion Bold Italic";
+  font-family: "Minion Variable";
+  src: url("../fonts/MinionVariableConcept-Italic.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Minion Italic";
   src: url("../fonts/MinionVariableConcept-Italic.otf") format("truetype");
   font-style: normal;
   font-weight: normal;
@@ -62,11 +68,13 @@ body {
   justify-content: space-between;
   height: 100vh;
   overflow: hidden;
+  background-color: red;
   background: url(./../img/background-3.png) no-repeat right top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border-bottom: solid #afaf8b 0.1px;
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -121,7 +129,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 24px;
+  padding: 32px 24px;
   background: url(./../img/background-3.png) no-repeat right top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -138,8 +146,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 24px;
-  padding-top: 8px;
+  padding-bottom: 24px; 
 }
 
 .pictures .frame {
@@ -189,7 +196,7 @@ body {
   font-size: 20px;
 }
 .number {
-  font-family: "Minion Bold Italic";
+  font-family: "Minion Italic";
   font-size: 20px;
 }
 
@@ -222,12 +229,20 @@ body {
   letter-spacing: 0;
 }
 
+.divider.final{
+  padding: 36px 24px;
+}
+
 .white-boton {
   margin-bottom: 20px;
 }
 
 .bancarios span {
   font-family: "Cormorant Italic", cursive;
+}
+
+.bancarios .number {
+  font-family: "Minion Variable";
 }
 
 .bancarios img {
@@ -255,7 +270,7 @@ body {
 #dias,
 #minutos,
 #segundos {
-  font-family: "Cormorant BItalic", cursive;
+  font-family: "Minion Bold";
 }
 
 .seccion-contador .flower {
@@ -385,7 +400,7 @@ body {
   }
 
   .number {
-    font-family: "Minion Bold Italic";
+    font-family: "Minion Variable";
     font-size: 1em;
   }
 
