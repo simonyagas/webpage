@@ -453,6 +453,10 @@ body {
     display: none;
   }
 
+  .modal-body br {
+    display: inline;
+  }
+
   .middle,
   .portada {
     -webkit-background-size: cover;
@@ -466,34 +470,38 @@ body {
   }
 
   .flower {
-    height: 250px;
+    height: 200px;
   }
 
   .portada-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 
-  .letter-img.date img,
-  .letter-img.elegante img,
-  .letter-img img {
+  .letter-img.elegante img {
     width: 30%;
   }
 
+  .letter-img.date img,
+  .letter-img img {
+    width: 40%;
+  }
+
   .seccion-contador .flower {
-    height: 250px;
+    height: 150px;
   }
 
   .contador {
     border-bottom: solid #afaf8b 1px;
   }
+
   .divider,
   .divider.bold {
     padding: 60px;
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .location {
-    font-size: 40px;
+    font-size: 32px;
     padding: 48px;
   }
 
@@ -502,19 +510,19 @@ body {
   }
 
   #contador {
-    font-size: 40px;
+    font-size: 32px;
     padding: 60px 40px 40px;
   }
 
   .aap {
-    font-size: 40px;
+    font-size: 32px;
   }
   .direccion {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .horario {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1em;
     margin: 32px 0px 48px;
   }
@@ -532,10 +540,11 @@ body {
 
   .bancarios {
     min-height: 400px;
-    font-size: 40px;
+    font-size: 32px;
   }
   .bancarios img {
-    width: 25%;
+    width: auto;
+    height: 350px;
     left: -40px;
   }
 
