@@ -1,7 +1,8 @@
-// Función para actualizar el contador
 function actualizarContador() {
   var fechaActual = new Date();
-  var fechaObjetivo = new Date("2023-12-23"); // Establece la fecha objetivo aquí (formato: año-mes-día)
+  
+  // Ajusta la fecha objetivo con la hora específica (17:45 hora de Argentina)
+  var fechaObjetivo = new Date("2023-12-23T17:45:00-03:00"); // Ajusta la fecha y la zona horaria según sea necesario
 
   var diferencia = fechaObjetivo - fechaActual;
 
